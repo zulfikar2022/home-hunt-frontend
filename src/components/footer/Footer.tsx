@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className=" py-6">
       <Separator />
-      <div className="max-w-6xl mx-auto grid md:grid-cols-4 grid-cols-2 sm:mx-auto mt-2 gap-8">
+      <div className="max-w-6xl mx-auto pl-5 grid md:grid-cols-4 grid-cols-2 sm:mx-auto mt-2 gap-8">
         <div className="space-y-3">
           <h5 className="font-bold text-lg">Customer Support</h5>
           <ul className="text-sm">

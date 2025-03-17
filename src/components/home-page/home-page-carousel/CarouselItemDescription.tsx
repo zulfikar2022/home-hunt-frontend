@@ -14,8 +14,8 @@ const CarouselItemDescription = ({
   return (
     <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10">
       <div className="flex flex-col gap-4">
-        <p className="text-4xl ">{text.title}</p>
-        <p>{text.description}</p>
+        <p className="text-4xl px-6 ">{text.title}</p>
+        <p className="px-6">{text.description}</p>
       </div>
       <Image src={`/${imgSrc}`} alt="carousel image" width={500} height={500} />
     </div>
