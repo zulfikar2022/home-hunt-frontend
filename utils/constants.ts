@@ -1,0 +1,4 @@
+export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME;
+export const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+export const NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY =
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
