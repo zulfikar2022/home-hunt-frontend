@@ -36,6 +36,7 @@ export function NavUser({
     console.log("Log out");
     Cookies.remove("token");
     localStorage.removeItem("token");
+    window.location.reload();
     router.push("/");
   };
 
