@@ -86,7 +86,7 @@ const DetailsDialog: React.FC<DetailsDialogProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent>
+      <DialogContent className="w-fit max-h-[80vh] overflow-y-auto sm:max-w-[90vw]">
         <DialogTitle>{item?.location}</DialogTitle>
         <DialogDescription>{item?.description}</DialogDescription>
         <div className="mt-4">

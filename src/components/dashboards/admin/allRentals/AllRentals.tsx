@@ -20,6 +20,7 @@ import DetailsDialog from "@/components/utils-components/DetailsDialogue";
 const AllRentals = () => {
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
   const [isDetailsDialogOpen, setIsDetailsDialogOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState<IRental[] | []>([]);
   const [metadata, setMetadata] = useState<TMetadata | null>(null);
 
@@ -38,6 +39,8 @@ const AllRentals = () => {
         setMetadata(data.data.metadata);
       } catch (error) {
         console.error(error);
+      } finally {
+        setIsLoading(false);
       }
     };
     fetchListings();
@@ -76,6 +79,10 @@ const AllRentals = () => {
     setIsDetailsDialogOpen(false);
     setSelectedItemId(null);
   };
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div className="flex flex-col justify-center items-center my-4">
