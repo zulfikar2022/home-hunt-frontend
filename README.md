@@ -21,9 +21,17 @@ RentEase is a platform that connects landlords with tenants. Landlords can list 
 
 ## 🏗️ Installation & Setup
 
+> #### How to run the project locally?
+>
+> You have to nodejs installed in your system to run the project locally
+>
+> > - Clone the repository
+> > - run command `npm install`
+> > - create a .env file and provide the values of environment variables available in constants.ts file
+
 ### 1️⃣ Clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/rentease-frontend.git
-cd rentease-frontend
+git clone https://github.com/zulfikar2022/home-hunt-frontend.git
+cd home-hunt-frontend
 ```
