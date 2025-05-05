@@ -13,13 +13,19 @@ import { NavItem } from "./navItem/navItem";
 import { ModeToggle } from "./Mode/ModeToggle";
 import { usePathname } from "next/navigation";
 import { TRoute } from "@/routes";
+import { useTheme } from "next-themes";
 
 export default function Navbar({ routes }: { routes: TRoute[] }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const { resolvedTheme } = useTheme();
 
   return (
-    <nav className=" shadow-md p-4">
+    <nav
+      className={`shadow-md p-4 sticky top-0 z-50 ${
+        resolvedTheme === "dark" ? "bg-[#030712]" : "bg-[#e3e6e8]"
+      }`}
+    >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold">
