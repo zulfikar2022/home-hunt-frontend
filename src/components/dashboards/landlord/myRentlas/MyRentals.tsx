@@ -14,6 +14,7 @@ import { EditIcon, EyeIcon, Trash2Icon } from "lucide-react";
 import DeleteConfirmation from "@/components/utils-components/DeleteConfirmation";
 import DetailsDialog from "@/components/utils-components/DetailsDialogue";
 import UpdateRentalsDialogue from "@/components/utils-components/UpdateRentalsDialogue";
+import Loader from "@/components/loader/Loader";
 
 export interface IRental {
   _id: string;
@@ -140,7 +141,7 @@ const MyRentals = () => {
           </Table>
         </div>
       )}
-      {loading && <p>Loading...</p>}
+      {loading && <Loader />}
       {selectedItemId && (
         <DetailsDialog
           id={selectedItemId}

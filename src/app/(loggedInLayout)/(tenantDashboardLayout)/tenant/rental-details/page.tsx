@@ -3,10 +3,11 @@
 import { RentalDetail } from "@/components/RentalDetails/RentalDetails";
 import React, { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import Loader from "@/components/loader/Loader";
 
 export default function RentalDetailsPage() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader />}>
       <RentalDetailsContent />
     </Suspense>
   );

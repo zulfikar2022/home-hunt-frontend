@@ -17,6 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 import DeleteConfirmation from "@/components/utils-components/DeleteConfirmation";
 import toast from "react-hot-toast";
+import Loader from "@/components/loader/Loader";
 
 const AllUsers = () => {
   const [users, setUsers] = useState<IUser[] | []>([]);
@@ -111,7 +112,7 @@ const AllUsers = () => {
     }
   };
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loader />;
   console.log(users);
   return (
     <div className="flex flex-col justify-center items-center my-4">

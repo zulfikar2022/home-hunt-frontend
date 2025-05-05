@@ -14,6 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import DeleteConfirmation from "@/components/utils-components/DeleteConfirmation";
 import moment from "moment";
+import Loader from "@/components/loader/Loader";
 
 export interface IUser {
   _id: string;
@@ -104,7 +105,7 @@ const RentalRequests = () => {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
   return (
     <div className="flex flex-col justify-center items-center my-4">

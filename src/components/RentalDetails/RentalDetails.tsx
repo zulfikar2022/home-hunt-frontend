@@ -16,6 +16,7 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 import toast from "react-hot-toast";
+import { useTheme } from "next-themes";
 
 export function RentalDetail({ rentalId }: { rentalId: string }) {
   const [data, setData] = useState<IRental>({
@@ -59,7 +60,7 @@ export function RentalDetail({ rentalId }: { rentalId: string }) {
     id: string | undefined;
     role: string | undefined;
   }>({ id: undefined, role: undefined });
-
+  const { resolvedTheme } = useTheme();
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -83,7 +84,7 @@ export function RentalDetail({ rentalId }: { rentalId: string }) {
   }, [rentalId]);
 
   return (
-    <Card className="max-w-3xl rounded-lg shadow-lg mx-auto mb-3 p-6 flex flex-col items-center">
+    <Card className="max-w-3xl rounded-lg shadow-lg mx-auto mb-3 p-6 flex flex-col items-center mt-4">
       {/* Image slider centered */}
       <div className="w-full max-w-md flex justify-center items-center">
         <Carousel className="">
@@ -118,7 +119,11 @@ export function RentalDetail({ rentalId }: { rentalId: string }) {
           {data.location}
         </CardHeader>
         <p className="text-sm text-gray-600 mb-4">{data.description}</p>
-        <p className="text-xl font-semibold text-green-600 mb-4">
+        <p
+          className={`text-xl font-semibold ${
+            resolvedTheme === "dark" ? "#e3e6e8" : "#030712"
+          }`}
+        >
           Rent: ${data.rentAmount}
         </p>
         <p className="text-sm text-gray-600 mb-4">

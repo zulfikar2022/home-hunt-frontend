@@ -16,6 +16,7 @@ import { IRental } from "../../landlord/myRentlas/MyRentals";
 import { TMetadata } from "@/common_pages/Rentals";
 import Pagination from "@/components/utils-components/Pagination";
 import DetailsDialog from "@/components/utils-components/DetailsDialogue";
+import Loader from "@/components/loader/Loader";
 
 const AllRentals = () => {
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
@@ -81,7 +82,7 @@ const AllRentals = () => {
   };
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   return (

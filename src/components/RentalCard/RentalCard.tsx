@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { jwtDecode } from "jwt-decode";
+import { useTheme } from "next-themes";
 
 export function RentalCard({
   image,
@@ -23,6 +24,7 @@ export function RentalCard({
     id: string | undefined;
     role: string | undefined;
   }>({ id: undefined, role: undefined });
+  const { resolvedTheme } = useTheme();
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -69,7 +71,11 @@ export function RentalCard({
       <div className="flex justify-between items-center pr-1">
         <CardFooter className="p-4">
           {/* Price tag */}
-          <span className="text-lg font-semibold text-green-600">
+          <span
+            className={`text-lg font-semibold ${
+              resolvedTheme === "dark" ? "#e3e6e8" : "#030712"
+            }`}
+          >
             ${rentAmount}
           </span>
         </CardFooter>

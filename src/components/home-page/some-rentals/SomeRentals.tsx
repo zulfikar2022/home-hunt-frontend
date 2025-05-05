@@ -7,6 +7,7 @@ import { RentalCard } from "@/components/RentalCard/RentalCard";
 import { Button } from "@/components/ui/button";
 import { jwtDecode } from "jwt-decode";
 import { useRouter } from "next/navigation";
+import Loader from "@/components/loader/Loader";
 
 const SomeRentals = () => {
   const [rentals, setRentals] = useState<IRental[] | []>([]);
@@ -21,7 +22,7 @@ const SomeRentals = () => {
         const res = await fetch(`${BASE_URL}/public/rentals`);
         const data = await res.json();
 
-        setRentals(data.data.rentals.splice(0, 6));
+        setRentals(data.data.rentals.splice(0, 8));
 
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
@@ -46,14 +47,14 @@ const SomeRentals = () => {
     }
   };
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
   return (
     <div className="my-10 mx-auto">
       <h1 className="text-3xl font-bold text-center mb-5"> Rentals</h1>
       {rentals.length > 0 ? (
         <div className="w-fit mx-auto">
-          <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-4 gap-10">
             {rentals?.map((rental) => {
               return (
                 <RentalCard
@@ -76,7 +77,7 @@ const SomeRentals = () => {
             className="mt-4 hover:cursor-pointer w-fit"
             variant="outline"
           >
-            See All Rentals
+            See All Rentals ➡️
           </Button>
         </div>
       ) : (

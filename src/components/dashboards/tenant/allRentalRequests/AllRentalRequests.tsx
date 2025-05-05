@@ -19,6 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import DeleteConfirmation from "@/components/utils-components/DeleteConfirmation";
 import { loadStripe } from "@stripe/stripe-js";
+import Loader from "@/components/loader/Loader";
 
 type RentalStatus = "pending" | "approved" | "rejected";
 
@@ -185,7 +186,7 @@ const AllRentalRequests = () => {
             </TableBody>
           </Table>
         ) : (
-          <p className="">Loading...</p>
+          <Loader />
         )}
       </div>
     </div>

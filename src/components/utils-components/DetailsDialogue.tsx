@@ -15,6 +15,7 @@ import { IRental } from "../dashboards/landlord/myRentlas/MyRentals";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { Separator } from "../ui/separator";
+import Loader from "../loader/Loader";
 
 interface DetailsDialogProps {
   id: string; // _id to fetch the details
@@ -67,7 +68,9 @@ const DetailsDialog: React.FC<DetailsDialogProps> = ({
     return (
       <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent>
-          <DialogTitle>Loading...</DialogTitle>
+          <DialogTitle>
+            <Loader />
+          </DialogTitle>
         </DialogContent>
       </Dialog>
     );

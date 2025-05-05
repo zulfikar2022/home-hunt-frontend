@@ -3,7 +3,7 @@ import Contact from "./contact-page/Contact";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="my-5">
       <Contact />
     </div>
   );

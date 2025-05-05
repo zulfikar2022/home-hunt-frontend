@@ -1,3 +1,4 @@
+import { TravelTips } from "@/components/dummy-components/TravelTips";
 import Footer from "@/components/footer/Footer";
 import HomeCarousel from "@/components/home-page/home-page-carousel/HomeCarousel";
 import SomeRentals from "@/components/home-page/some-rentals/SomeRentals";
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Separator />
       <SomeRentals />
       <Separator />
+      <TravelTips />
       <Testimonials />
       <Footer />
     </div>

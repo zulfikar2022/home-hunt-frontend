@@ -24,6 +24,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { jwtDecode } from "jwt-decode";
+import Loader from "../loader/Loader";
 
 const updateRentalFormSchema = z.object({
   location: z.string().min(3, { message: "Location is too small." }),
@@ -157,7 +158,9 @@ export default function UpdateRentalDialog({
     return (
       <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent>
-          <DialogTitle>Loading...</DialogTitle>
+          <DialogTitle>
+            <Loader />
+          </DialogTitle>
         </DialogContent>
       </Dialog>
     );

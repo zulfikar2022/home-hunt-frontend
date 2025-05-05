@@ -7,6 +7,7 @@ import { BASE_URL } from "../../utils/constants";
 import { RentalCard } from "@/components/RentalCard/RentalCard";
 import { SearchIcon } from "lucide-react";
 import Footer from "@/components/footer/Footer";
+import Loader from "@/components/loader/Loader";
 
 export type TMetadata = {
   eachPageItem: number;
@@ -69,12 +70,15 @@ const Rentals = () => {
     }
   };
   if (isLoading) {
-    return <p className="text-center">Loading...</p>;
+    return (
+      <div className="text-center">
+        <Loader />
+      </div>
+    );
   }
   return (
     <div className="container mx-auto px-4 py-4 ">
-      <div className="flex flex-col md:flex-row items-center justify-between my-3">
-        <h1 className="text-2xl font-semibold ">Rentals</h1>
+      <div className="flex ">
         <div>
           <form
             onSubmit={handleSearch}
