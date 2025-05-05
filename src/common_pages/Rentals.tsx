@@ -78,8 +78,8 @@ const Rentals = () => {
   }
   return (
     <div className="container mx-auto px-4 py-4 ">
-      <div className="flex ">
-        <div>
+      <div className="flex  justify-center ">
+        <div className="flex flex-row">
           <form
             onSubmit={handleSearch}
             className="flex items-center gap-2 mb-4"
@@ -103,7 +103,7 @@ const Rentals = () => {
               type="number"
               placeholder="Bedrooms"
               name="numberOfBedrooms"
-              className="border border-gray-300 p-1 rounded-lg w-10"
+              className="border border-gray-300 p-1 rounded-lg w-20"
             />
             <button className="hover:cursor-pointer" type="submit">
               <SearchIcon />
@@ -115,7 +115,7 @@ const Rentals = () => {
       <div className="my-10 mx-auto">
         {data.length > 0 ? (
           <div className="w-fit mx-auto">
-            <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+            <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-4 gap-10 ">
               {data?.map((rental) => {
                 return (
                   <RentalCard
