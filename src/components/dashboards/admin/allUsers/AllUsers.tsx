@@ -57,7 +57,7 @@ const AllUsers = () => {
     });
     const data = await res.json();
 
-    setUsers(data.data.rentals);
+    setUsers(data.data.users);
     setMetadata(data.data.metadata);
   };
 
