@@ -26,6 +26,7 @@ import { useEffect } from "react";
 import { tokenDecoder } from "../../../../utils/auth";
 import toast from "react-hot-toast";
 import { BASE_URL } from "../../../../utils/constants";
+import Link from "next/link";
 
 // Zod schema for form validation
 const formSchema = z
@@ -194,6 +195,12 @@ const SignupPage = () => {
           </Button>
         </form>
       </Form>
+      <div className="mt-5">
+        <p>Already have an account?</p>{" "}
+        <Link className="underline text-blue-700" href="/login">
+          Login
+        </Link>
+      </div>
     </div>
   );
 };

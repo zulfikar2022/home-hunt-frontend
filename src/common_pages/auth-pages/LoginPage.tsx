@@ -19,6 +19,7 @@ import { useRouter } from "next/navigation";
 import { BASE_URL } from "../../../utils/constants";
 import { tokenDecoder } from "../../../utils/auth";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const formSchema = z
   .object({
@@ -172,6 +173,12 @@ const LoginComponent = () => {
           }
         </form>
       </Form>
+      <div className="mt-5">
+        <p>First Time Here?</p>{" "}
+        <Link className="underline text-blue-700" href="/signup">
+          Sign UP
+        </Link>
+      </div>
     </div>
   );
 };
