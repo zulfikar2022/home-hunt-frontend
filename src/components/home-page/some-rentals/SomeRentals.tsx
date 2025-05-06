@@ -72,13 +72,15 @@ const SomeRentals = () => {
               );
             })}
           </div>
-          <Button
-            onClick={handleSeeAllRentals}
-            className="mt-4 hover:cursor-pointer w-fit"
-            variant="outline"
-          >
-            See All Rentals ➡️
-          </Button>
+          <div className="flex justify-center items-center">
+            <Button
+              onClick={handleSeeAllRentals}
+              className="mt-4 hover:cursor-pointer w-fit "
+              variant="outline"
+            >
+              See All Rentals ➡️
+            </Button>
+          </div>
         </div>
       ) : (
         <p className="text-center">No rentals available</p>
