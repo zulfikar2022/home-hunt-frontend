@@ -13,7 +13,7 @@ export function TravelTips() {
         Travel Tips & Advice
       </h2>
       <div className="grid gap-6 md:grid-cols-3">
-        <Card>
+        <Card className="hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
           <CardHeader className="pt-3">
             <CardTitle>Plan Smart, Travel Easy</CardTitle>
           </CardHeader>
@@ -23,7 +23,7 @@ export function TravelTips() {
           </CardContent>
           <CardFooter></CardFooter>
         </Card>
-        <Card>
+        <Card className="hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
           <CardHeader className="pt-3">
             <CardTitle>Top Safety Tips for Tenants</CardTitle>
           </CardHeader>
@@ -33,7 +33,7 @@ export function TravelTips() {
           </CardContent>
           <CardFooter></CardFooter>
         </Card>
-        <Card>
+        <Card className="hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
           <CardHeader className="pt-3">
             <CardTitle>Packing Essentials</CardTitle>
           </CardHeader>

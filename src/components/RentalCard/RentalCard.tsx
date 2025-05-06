@@ -49,7 +49,7 @@ export function RentalCard({
     }
   };
   return (
-    <Card className="max-w-xs rounded-lg shadow-lg">
+    <Card className="max-w-xs rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
       {/* Image at the top of the card */}
       <div className="relative w-full h-48">
         <Image

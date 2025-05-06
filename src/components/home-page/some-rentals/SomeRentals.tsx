@@ -51,7 +51,7 @@ const SomeRentals = () => {
   }
   return (
     <div className="my-10 mx-auto">
-      <h1 className="text-3xl font-bold text-center mb-5"> Rentals</h1>
+      <h1 className="text-3xl font-bold text-center mb-10"> Rentals</h1>
       {rentals.length > 0 ? (
         <div className="w-fit mx-auto">
           <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-4 gap-10">

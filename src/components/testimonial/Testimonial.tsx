@@ -11,7 +11,7 @@ export default function Testimonial({
   author: string;
 }) {
   return (
-    <Card className="max-w-md mx-auto  p-6 rounded-2xl shadow-lg">
+    <Card className="max-w-md mx-auto  p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
       <CardContent className="flex flex-col items-center text-center">
         <Avatar className="w-16 h-16 my-4">
           <AvatarFallback>{fallback}</AvatarFallback>
