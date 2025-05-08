@@ -1,6 +1,6 @@
-# 🏠 RentEase - Next.js Frontend
+# 🏠 HomeHunt - Next.js Frontend
 
-RentEase is a platform that connects landlords with tenants. Landlords can list rental properties, and tenants can search, request bookings, and complete payments. The platform also includes an admin panel for user management.
+HomeHunt is a platform that connects landlords with tenants. Landlords can list rental properties, and tenants can search, request bookings, and complete payments. The platform also includes an admin panel for user management.
 
 ## 🚀 Features
 
