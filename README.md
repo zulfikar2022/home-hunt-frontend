@@ -42,7 +42,7 @@ I have several plans to enhance this project further:
 
 ## Live Deployment
 
-You can view the live deployment of the backend service [here](https://home-hunt-frontend.vercel.app/). <br/>
+You can view the live deployment of the website [https://home-hunt-frontend.vercel.app/](https://home-hunt-frontend.vercel.app/). <br/>
 Backend code link: [https://github.com/zulfikar2022/home-hunt-backend](https://github.com/zulfikar2022/home-hunt-backend). <br/>
 Backend live link: [https://assignmentsixbackend.vercel.app/](https://assignmentsixbackend.vercel.app/) <br/>
 
