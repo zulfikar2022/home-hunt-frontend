@@ -14,10 +14,10 @@ RentEase is a platform that connects landlords with tenants. Landlords can list 
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: [Next.js](https://nextjs.org/) (React Framework)
-- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
-- **Styling**: Tailwind CSS
-- **Payment**: Stripe Integration
+- 🖼️ **Frontend**: [Next.js](https://nextjs.org/) (React Framework)
+- 🧩 **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- 🎨 **Styling**: Tailwind CSS
+- 💳 **Payment**: Stripe Integration
 
 ## 🏗️ Installation & Setup
 
