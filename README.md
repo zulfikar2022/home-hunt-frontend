@@ -29,6 +29,17 @@ RentEase is a platform that connects landlords with tenants. Landlords can list 
 > > - Create a .env file and provide the values of environment variables available in constants.ts file
 > > - Run command `npm install`
 
+## 🤔 Challenges Faced
+
+One of the main challenges I faced while building this project was integrating Stripe as the payment method. Since I had never worked with Stripe before, it was a completely new experience for me. It took a lot of time and effort to understand the documentation and implement the integration. After two days of persistent work, I was finally able to successfully add Stripe to the platform.
+
+## 🔮 Future Plans
+
+I have several plans to enhance this project further:
+
+- **Real-time Chat**: Implement direct messaging between users using technologies like Socket.IO to improve communication and user experience.
+- **Enhanced Dashboards**: Update dashboards for all user types with more detailed and interactive statistical and analytical data to provide better insights.
+
 ## Live Deployment
 
 You can view the live deployment of the backend service [here](https://home-hunt-frontend.vercel.app/). <br/>
