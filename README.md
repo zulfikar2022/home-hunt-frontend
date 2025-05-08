@@ -31,7 +31,9 @@ RentEase is a platform that connects landlords with tenants. Landlords can list 
 
 ## Live Deployment
 
-You can view the live deployment of the backend service [here](https://home-hunt-frontend.vercel.app/).
+You can view the live deployment of the backend service [here](https://home-hunt-frontend.vercel.app/). <br/>
+Backend code link: [https://github.com/zulfikar2022/home-hunt-backend](https://github.com/zulfikar2022/home-hunt-backend). <br/>
+Backend live link: [https://assignmentsixbackend.vercel.app/](https://assignmentsixbackend.vercel.app/) <br/>
 
 ### 1️⃣ Clone the repository:
 
